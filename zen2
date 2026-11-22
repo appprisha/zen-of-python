@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Zen of Python</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: #101827;
+  color: #f1f5f9;
+  margin: 0;
+  padding: 25px 15px;
+}
+.container {
+  max-width: 700px;
+  margin: auto;
+  background: #1e293b;
+  padding: 25px;
+  border-radius: 15px;
+}
+h1 {
+  color: #facc15;
+  text-align: center;
+}
+.author {
+  text-align: center;
+  color: #94a3b8;
+}
+p {
+  line-height: 1.7;
+  border-bottom: 1px solid #334155;
+  padding-bottom: 8px;
+}
+button {
+  background: #facc15;
+  color: #111827;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+footer {
+  text-align: center;
+  margin-top: 25px;
+  color: #94a3b8;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>🐍 The Zen of Python</h1>
+<div class="author">By Tim Peters</div>
+
+<div id="poem">
+<p>Beautiful is better than ugly.</p>
+<p>Explicit is better than implicit.</p>
+<p>Simple is better than complex.</p>
+<p>Complex is better than complicated.</p>
+<p>Flat is better than nested.</p>
+<p>Sparse is better than dense.</p>
+<p>Readability counts.</p>
+<p>Special cases aren't special enough to break the rules.</p>
+<p>Although practicality beats purity.</p>
+<p>Errors should never pass silently.</p>
+<p>Unless explicitly silenced.</p>
+<p>In the face of ambiguity, refuse the temptation to guess.</p>
+<p>There should be one-- and preferably only one --obvious way to do it.</p>
+<p>Although that way may not be obvious at first unless you're Dutch.</p>
+<p>Now is better than never.</p>
+<p>Although never is often better than right now.</p>
+<p>If the implementation is hard to explain, it's a bad idea.</p>
+<p>If the implementation is easy to explain, it may be a good idea.</p>
+<p>Namespaces are one honking great idea -- let's do more of those!</p>
+</div>
+
+<button onclick="copyText()">Copy All Principles</button>
+
+<footer>Python Programming Philosophy ❤️</footer>
+</div>
+
+<script>
+function copyText() {
+  const text = document.getElementById("poem").innerText;
+  navigator.clipboard.writeText(text)
+    .then(() => alert("Text copied successfully!"));
+}
+</script>
+</body>
+</html>
